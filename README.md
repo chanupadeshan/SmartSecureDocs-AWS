@@ -58,33 +58,14 @@ SmartSecureDocs-AWS/
 
 ---
 
-## 🧩 Project Phases
+## 🧩 Project Roadmap
 
-### ✅ Phase 1: Setup
-- [ ] Create S3 bucket
-- [ ] Create DynamoDB table
-- [ ] Create IAM Role for Lambda
-- [ ] Set up Cognito User Pool and user groups (admin, hr, employee)
+| Phase | Description |
+|-------|-------------|
+| **✅ Phase 1: Setup** | - Create S3 bucket<br>- Create DynamoDB table<br>- Create IAM role for Lambda<br>- Set up Cognito user pool & groups (admin, HR, employee) |
+| **⚙️ Phase 2: Upload & Textract** | - Implement S3-triggered Lambda function<br>- Extract text using Textract<br>- Store raw text in S3 or DynamoDB |
+| **🔍 Phase 3: NLP & PII Masking** | - Classify sensitivity with Comprehend<br>- Mask PII using regex or Macie<br>- Save masked document version |
+| **🔐 Phase 4: Role-Based Access** | - Configure Cognito group-based access<br>- Use API Gateway + Lambda to serve masked/unmasked content |
+| **🤖 Phase 5: Chatbot Interface** | - Convert text to embeddings<br>- Integrate Bedrock or LangChain for Q&A<br>- Filter answers by user role |
+| **📊 Phase 6 (Optional): Dashboard & Logs** | - Build React-based admin dashboard<br>- Display uploads, status, and access logs |
 
-### ⚙️ Phase 2: Document Upload + Textract
-- [ ] Create Lambda function triggered by S3
-- [ ] Use Amazon Textract to extract content
-- [ ] Store raw text in DynamoDB or S3
-
-### 🔍 Phase 3: NLP & PII Masking
-- [ ] Use Comprehend to analyze text and classify sensitivity
-- [ ] Detect and mask PII using regex or Macie
-- [ ] Save masked version in S3/DynamoDB
-
-### 🔐 Phase 4: Role-Based Access
-- [ ] Use Cognito group-based access control
-- [ ] API Gateway + Lambda to serve masked/unmasked based on role
-
-### 🤖 Phase 5: Chatbot Interface
-- [ ] Convert text to embeddings
-- [ ] Use LangChain or Bedrock for Q&A chatbot
-- [ ] Role-based filtered answers
-
-### 📊 Phase 6: Dashboard + Logs (Optional)
-- [ ] Create admin dashboard (React)
-- [ ] Show uploaded docs, status, access logs
