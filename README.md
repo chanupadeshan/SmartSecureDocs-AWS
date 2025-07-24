@@ -5,6 +5,11 @@ This system allows users to upload confidential documents (PDFs/JPGs), automatic
 
 ---
 
+**Note:**  
+This is a self-study project designed to help me gain hands-on experience with core AWS services including S3 buckets, DynamoDB, IAM roles, Cognito, and Lambda. Through building SmartSecureDocs-AWS, I aim to deepen my practical understanding of cloud architecture, security, and serverless workflows—turning theory into real-world skills.
+
+---
+
 ## 🚀 Features
 
 - 📤 Upload confidential documents to **Amazon S3**
