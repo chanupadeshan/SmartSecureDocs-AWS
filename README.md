@@ -58,3 +58,15 @@ SmartSecureDocs-AWS/
 '''
 
 ---
+
+## 🧩 Project Roadmap
+
+| Phase | Description |
+|-------|-------------|
+| **✅ Phase 1: Setup** | - Create S3 bucket<br>- Create DynamoDB table<br>- Create IAM role for Lambda<br>- Set up Cognito user pool & groups (admin, HR, employee) |
+| **⚙️ Phase 2: Upload & Textract** | - Implement S3-triggered Lambda function<br>- Extract text using Textract<br>- Store raw text in S3 or DynamoDB |
+| **🔍 Phase 3: NLP & PII Masking** | - Classify sensitivity with Comprehend<br>- Mask PII using regex or Macie<br>- Save masked document version |
+| **🔐 Phase 4: Role-Based Access** | - Configure Cognito group-based access<br>- Use API Gateway + Lambda to serve masked/unmasked content |
+| **🤖 Phase 5: Chatbot Interface** | - Convert text to embeddings<br>- Integrate Bedrock or LangChain for Q&A<br>- Filter answers by user role |
+| **📊 Phase 6 (Optional): Dashboard & Logs** | - Build React-based admin dashboard<br>- Display uploads, status, and access logs |
+
